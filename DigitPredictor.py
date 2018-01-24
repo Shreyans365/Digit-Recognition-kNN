@@ -141,9 +141,9 @@ def checkAccuracy(trainData,testData,k):
 	accuracy = 0.0
 	for x in testData:
 		myans = classifyUsingKNN(trainData,x[0:len(x)-1],k)
-		print "in"
+		
 		if (myans == x[-1]):
-			print "yes"
+			
 			accuracy = accuracy + 1.0/len(testData)
 			
 	return accuracy
